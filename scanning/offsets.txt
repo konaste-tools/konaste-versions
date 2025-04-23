@@ -1,0 +1,39 @@
+version:
+local moduleName = "libeacnet.dll"
+local knownBytes = "51 43 56 3A 4A 3A 42 3A 41 3A 32 30 ?? ?? ?? ?? ?? ?? ?? ?? 00 00 01 00 00 00 01 00 00 00"
+local pointerOffsets = {  }
+local finalOffset = 0x0
+
+gamedirectory:
+- assuming your game is located at C:\Games\SOUND VOLTEX EXCEED GEAR\ -- otherwise, convert your corresponding game path into bytes and append 00
+local moduleName = "sv6c.exe"
+local knownBytes = "43 3A 5C 47 61 6D 65 73 5C 53 4F 55 4E 44 20 56 4F 4C 54 45 58 20 45 58 43 45 45 44 20 47 45 41 52 5C 00"
+local pointerOffsets = {  }
+local finalOffset = 0x0
+
+activeui:
+local moduleName = "sv6c.exe"
+local knownBytes = "00 00 00 00 00 00 00 00 14 00 00 00 0A 00 00 00 14 00 00 00 ?? 00 00 00"
+local pointerOffsets = {  }
+local finalOffset = -0x14
+
+highscores:
+
+userscores:
+
+nowplaying:
+
+result:
+- expects result screen to be `shiningray` NOV with a score of 0 and record of 10_000_000
+local moduleName = "avs2-core.dll"
+local knownBytes = "63 01 00 00 ?? ?? 00 00 00 00 00 00 80 96 98 00"
+local pointerOffsets = { 0x230, 0x10, 0x18, 0x10 }
+local finalOffset = 0x80
+
+liveplaydata:
+
+items:
+local moduleName = "sv6c.exe"
+local knownBytes = "49 31 30 31 30 30 30 31 00 00 00 00 00 00 00 00 00 4D 55 53 49 43 5F 50 41 43 4B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00"
+local pointerOffsets = { 0x1F8 }
+local finalOffset = 0x0
