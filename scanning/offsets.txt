@@ -31,6 +31,11 @@ local pointerOffsets = { 0x230, 0x10, 0x18, 0x10 }
 local finalOffset = 0x80
 
 liveplaydata:
+- play any chart until after the first note passes. This should point past the registered pointer (add 0x10 to the pointer offsets)
+local moduleName = "avs2-core.dll"
+local knownBytes = "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 01 00 0A 00 00 00 ?? ?? ?? ?? 01 00 00 00"
+local pointerOffsets = { 0x0 }
+local finalOffset = 0x0
 
 items:
 local moduleName = "sv6c.exe"
