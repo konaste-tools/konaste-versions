@@ -37,7 +37,7 @@ addresses:
     paths:
       - module: sv6c.exe
         pointers: []
-        final_offset: '0xE438F0'
+        final_offset: '0xE43A50'
   result:
     paths:
       - module: avs2-core.dll
@@ -57,22 +57,22 @@ addresses:
     paths:
       - module: avs2-core.dll
         pointers:
-          - offset: '0x128EB8'
+          - offset: '0x14cb68'
             size: 4
-          - offset: '0x54'
+          - offset: '0xE4'
             size: 4
-          - offset: '0xB8'
+          - offset: '0x30'
             size: 4
           - offset: '0x48'
             size: 4
         final_offset: '0x0'
       - module: avs2-core.dll
         pointers:
-          - offset: '0x128EB8'
+          - offset: '0x14cc78'
             size: 4
-          - offset: '0x54'
+          - offset: '0x04'
             size: 4
-          - offset: '0xA0'
+          - offset: '0x30'
             size: 4
           - offset: '0x48'
             size: 4
